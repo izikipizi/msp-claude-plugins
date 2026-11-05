@@ -365,6 +365,19 @@
       ]
     },
     {
+      "name": "nizlo",
+      "source": "./msp-claude-plugins/nizlo/read-only-rmm",
+      "description": "Nizlo RMM - read-only fleet, customer, site, endpoint, alert, and stale-endpoint operations",
+      "category": "rmm",
+      "tags": [
+        "nizlo",
+        "rmm",
+        "endpoint-monitoring",
+        "read-only",
+        "msp"
+      ]
+    },
+    {
       "name": "pagerduty",
       "source": "./msp-claude-plugins/pagerduty/pagerduty",
       "description": "PagerDuty - incident management, on-call scheduling, alerting",

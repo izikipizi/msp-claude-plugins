@@ -30,8 +30,8 @@
     }
   },
   "totals": {
-    "packs": 86,
-    "skills": 385,
+    "packs": 87,
+    "skills": 389,
     "commands": 317,
     "agents": 154
   },
@@ -1989,6 +1989,55 @@
           "path": "msp-claude-plugins/ninjaone/ninjaone-rmm/agents/patch-compliance-reporter.md"
         }
       ]
+    },
+    {
+      "name": "nizlo",
+      "displayName": "Nizlo",
+      "version": "0.1.0",
+      "description": "Nizlo RMM - read-only fleet, customer, site, endpoint, alert, and stale-endpoint operations",
+      "category": "rmm",
+      "tags": [
+        "nizlo",
+        "rmm",
+        "endpoint-monitoring",
+        "read-only",
+        "msp"
+      ],
+      "path": "msp-claude-plugins/nizlo/read-only-rmm",
+      "license": "Apache-2.0",
+      "homepage": "https://nizlo.com/rmm-api",
+      "mcpServers": {
+        "nizlo": {
+          "command": "node",
+          "args": [
+            "${CLAUDE_PLUGIN_ROOT}/server/index.mjs"
+          ],
+          "env": {
+            "NIZLO_API_TOKEN": "${NIZLO_API_TOKEN}",
+            "NIZLO_BASE_URL": "${NIZLO_BASE_URL}"
+          }
+        }
+      },
+      "skills": [
+        {
+          "id": "alerts",
+          "path": "msp-claude-plugins/nizlo/read-only-rmm/skills/alerts/SKILL.md"
+        },
+        {
+          "id": "api-patterns",
+          "path": "msp-claude-plugins/nizlo/read-only-rmm/skills/api-patterns/SKILL.md"
+        },
+        {
+          "id": "fleet-operations",
+          "path": "msp-claude-plugins/nizlo/read-only-rmm/skills/fleet-operations/SKILL.md"
+        },
+        {
+          "id": "stale-endpoints",
+          "path": "msp-claude-plugins/nizlo/read-only-rmm/skills/stale-endpoints/SKILL.md"
+        }
+      ],
+      "commands": [],
+      "agents": []
     },
     {
       "name": "pagerduty",

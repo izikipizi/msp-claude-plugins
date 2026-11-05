@@ -1,0 +1,19 @@
+{
+  "name": "nizlo",
+  "version": "0.1.0",
+  "description": "Nizlo RMM read-only fleet, customer, site, endpoint, alert, and stale-endpoint operations",
+  "author": {
+    "name": "Nizlo"
+  },
+  "homepage": "https://nizlo.com/rmm-api",
+  "repository": "https://github.com/WYRE-AI/msp-claude-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "nizlo",
+    "rmm",
+    "msp",
+    "endpoint-monitoring",
+    "read-only",
+    "mcp"
+  ]
+}

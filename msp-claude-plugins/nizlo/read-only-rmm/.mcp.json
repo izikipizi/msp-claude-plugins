@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "nizlo": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/server/index.mjs"
+      ],
+      "env": {
+        "NIZLO_API_TOKEN": "${NIZLO_API_TOKEN}",
+        "NIZLO_BASE_URL": "${NIZLO_BASE_URL}"
+      }
+    }
+  }
+}
